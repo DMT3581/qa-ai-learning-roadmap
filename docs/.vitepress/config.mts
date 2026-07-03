@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'Layer 1 - QA AI Adoption Layer 1',
   description: 'Curriculum intern de adoptie AI pentru echipa QA',
   lang: 'en-US',
+  base: "/qa-ai-learning-roadmap/",
 
   themeConfig: {
     nav: [
