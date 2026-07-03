@@ -27,17 +27,41 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # Align with runner default to avoid deprecation warnings; change to '20' only if you must
+          node-version: 24
 
-      - run: npm install
+      - name: Install dependencies
+        # prefer npm ci for reproducible install (requires package-lock.json)
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
-      - run: npm run docs:build
+      - name: Build docs
+        run: npm run docs:build
+
+      - name: Show build output (diagnostics)
+        run: |
+          echo "Listing docs/.vitepress/dist:"
+          ls -la docs/.vitepress/dist || true
+          echo "Find files:"
+          find docs/.vitepress/dist -type f -maxdepth 5 -print || true
+
+      - name: Fail if build output missing
+        run: |
+          if [ ! -d "docs/.vitepress/dist" ] || [ -z "$(ls -A docs/.vitepress/dist 2>/dev/null)" ]; then
+            echo "ERROR: Build output docs/.vitepress/dist is missing or empty. Aborting."
+            exit 1
+          fi
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
+          if-no-files-found: error
 
       - id: deployment
         uses: actions/deploy-pages@v4
