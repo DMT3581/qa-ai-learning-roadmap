@@ -28,8 +28,8 @@ export default defineConfig({
           { text: '1.5 How AI models learn: training, fine-tuning, adaptation', link: '/01-ai-fundamentals/1.5-how-ai-models-learn' },
           { text: '1.6 Why AI is probabilistic', link: '/01-ai-fundamentals/1.6-why-ai-is-probabilistic' },
           { text: '1.7 Tokens explained', link: '/01-ai-fundamentals/1.7-tokens-explained' },
-          { text: '1.8 Context windows and memory limitations', link: '/01-ai-fundamentals/1.8-context-window-and-memory-limitations' },
-          { text: '1.9 Hallucinations: what they are and why they happen', link: '/01-ai-fundamentals/1.9-hallucination-verification' },
+          { text: '1.8 Context windows and memory limitations', link: '/01-ai-fundamentals/1.8-context-windows' },
+          { text: '1.9 Hallucinations: what they are and why they happen', link: '/01-ai-fundamentals/1.9-hallucinations' },
           { text: '1.10 Practical Limitations of AI', link: '/01-ai-fundamentals/1.10-practical-limitations-of-ai' }
         ]
       },
@@ -37,14 +37,14 @@ export default defineConfig({
         text: '2. Prompt and Context Engineering',
         collapsed: false,
         items: [
-          { text: '1.1 Prompt anatomy: the building blocks of an effective prompt', link: '/02-prompting-core-skills/2.1-prompt-anatomy' },
-          { text: '1.2 Prompt vs. Conversation: Choosing the Right Interaction Style', link: '/02-prompting-core-skills/2.2-prompt-vs-conversation' },
-          { text: '1.3 Context Engineering: Giving AI the Right Information', link: '/02-prompting-core-skills/2.3-context-engineering' },
-          { text: '1.4 Writing Clear Constraints and Instructions', link: '/02-prompting-core-skills/2.4-writing-clear-constraints-and-instructions' },
-          { text: '1.5 Prompt Iteration: Improving Results Through Refinement', link: '/02-prompting-core-skills/2.5-prompt-iteration' },
-          { text: '1.6 Advanced Prompting Techniques: Role, Few-Shot Examples and Structured Instructions', link: '/02-prompting-core-skills/2.6-advanced-prompting-techniques' },
-          { text: '1.7 (TBD titlu)', link: '/02-prompting-core-skills/2.7-tbd'},
-          { text: '1.8 Building and Maintaining a Personal Prompt Library', link: '/02-prompting-core-skills/2.8-building-and-maintaining-a-personal-prompt-library' },
+          { text: '2.1 Prompt anatomy: the building blocks of an effective prompt', link: '/02-prompting-core-skills/2.1-prompt-anatomy' },
+          { text: '2.2 Prompt vs. Conversation: Choosing the Right Interaction Style', link: '/02-prompting-core-skills/2.2-prompt-vs-conversation' },
+          { text: '2.3 Context Engineering: Giving AI the Right Information', link: '/02-prompting-core-skills/2.3-context-engineering' },
+          { text: '2.4 Writing Clear Constraints and Instructions', link: '/02-prompting-core-skills/2.4-writing-clear-constraints-and-instructions' },
+          { text: '2.5 Prompt Iteration: Improving Results Through Refinement', link: '/02-prompting-core-skills/2.5-prompt-iteration' },
+          { text: '2.6 Advanced Prompting Techniques: Role, Few-Shot Examples and Structured Instructions', link: '/02-prompting-core-skills/2.6-advanced-prompting-techniques' },
+          { text: '2.7 Token-Efficient Prompting Strategies', link: '/02-prompting-core-skills/2.7-token-efficient-prompting' },
+          { text: '2.8 Building and Maintaining a Personal Prompt Library', link: '/02-prompting-core-skills/2.8-building-and-maintaining-a-personal-prompt-library' },
         ]
       },
       {

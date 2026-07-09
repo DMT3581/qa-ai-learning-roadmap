@@ -39,13 +39,3 @@ docs/
   roadmap.md           <- placeholder pentru layer1-content-roadmap.md
 ```
 
-## De facut
-
-1. Inlocuieste placeholderele `(TBD titlu)` din `docs/.vitepress/config.mts` cu titlurile
-   reale de capitole din `layer1-content-roadmap.md`.
-2. Redenumeste fisierele `*-tbd.md` cu slug-uri descriptive (ex: `2.2-tbd.md` -> `2.2-clarifying-your-prompt.md`)
-   si actualizeaza link-urile din sidebar in acelasi timp.
-3. Lipeste continutul fiecarui capitol in sectiunile corespunzatoare din fisierul `.md`.
-4. Clarifica numele categoriilor 5 si 7 (in acest moment sunt presupuneri pe baza notitelor
-   despre Wave 4 / Wave 5).
-5. Ruleaza `npm run docs:dev` ca sa verifici vizual navigarea si continutul.
