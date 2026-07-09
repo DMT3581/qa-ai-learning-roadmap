@@ -19,7 +19,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '1. AI Fundamentals',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '1.1 What AI Is and How It Differs from Traditional Software', link: '/01-ai-fundamentals/1.1-what-ai-is-and-how-it-differs-from-traditional-software' },
           { text: '1.2 AI vs LLMs', link: '/01-ai-fundamentals/1.2-ai-vs-llms' },
@@ -35,7 +35,7 @@ export default defineConfig({
       },
       {
         text: '2. Prompt and Context Engineering',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '2.1 Prompt anatomy: the building blocks of an effective prompt', link: '/02-prompting-core-skills/2.1-prompt-anatomy' },
           { text: '2.2 Prompt vs. Conversation: Choosing the Right Interaction Style', link: '/02-prompting-core-skills/2.2-prompt-vs-conversation' },
@@ -51,9 +51,9 @@ export default defineConfig({
         text: '3. Responsible AI Usage',
         collapsed: false,
         items: [
-          // { text: '3.1 Confidentiality and Sensitive Data', link: '/03-policy-safety/3.1-confidentiality-and-sensitive-data' },
-          // { text: '3.2 (TBD titlu)', link: '/03-policy-safety/3.2-tbd' },
-          // { text: '3.3 (TBD titlu)', link: '/03-policy-safety/3.3-tbd' },
+          { text: '3.1 Confidentiality and Sensitive Data', link: '/03-policy-safety/3.1-confidentiality-and-sensitive-data' },
+          { text: '3.2 Evaluating AI Outputs: When to Trust and When to Verify', link: '/03-policy-safety/3.2-evaluating-ai-outputs' },
+          { text: '3.3 Fact-Checking AI Responses with External Sources', link: '/03-policy-safety/3.3-fact-checking-ai-responses' },
           // { text: '3.7 (TBD titlu)', link: '/03-policy-safety/3.7-tbd' }
         ]
       },
