@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress'
 // odata ce imi trimiti continutul acelui fisier.
 
 export default defineConfig({
-  title: 'Layer 1 - QA AI Adoption Layer 1',
+  title: 'QA AI Adoption Layer 1',
   description: 'Curriculum intern de adoptie AI pentru echipa QA',
   lang: 'en-US',
   base: "/qa-ai-learning-roadmap/",
