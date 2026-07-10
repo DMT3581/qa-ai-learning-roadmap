@@ -48,7 +48,7 @@ Content is prioritized using three criteria, applied in order:
 
 > **Note:** Build order is **not** the same as teaching order.
 
-Mindset-related chapters are intentionally scheduled later in the content creation plan because they have few dependencies. However, they are intended to be introduced early during instructor-led sessions to help frame the learning journey.
+Mindset-related chapters are intentionally scheduled later in the content creation plan because they have few dependencies. However, they are intended to be introduced early during the learning journey.
 
 
 ---
@@ -84,31 +84,34 @@ Priority tiers correspond to implementation order:
 
 ## Wave 0 — Blocking (before any rollout) · P0
 
-| ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
-| 3.1 | Confidentiality and sensitive data: what you can and cannot share | Responsible Use | Brief | None — write first |
-| 1.1 | What AI is and how it differs from traditional software | Fundamentals | Brief | None |
-| 8.3 | AI does not replace human judgment | Mindset | Brief | None |
-
----
+| ID | Chapter | Category | Dependencies |
+|---|---|---|---|
+| 3.1 | Confidentiality and sensitive data: what you can and cannot share | Responsible Use | None — write first |
+| 1.1 | What AI is and how it differs from traditional software | Fundamentals | None |
+| 1.2 | AI vs. LLMs | — | 1.1 |
+| 1.3 | What is a Large Language Model (LLM) | — | 1.1 |
+| 8.3 | AI does not replace human judgment | Mindset | None |
 
 ## Wave 1 — Core prompting skill + calibration · P1
 
-| ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
-| 2.2 | Prompt vs. conversation: choosing the right interaction style | Prompt & Context Engineering | Brief | Existing: Prompt Anatomy |
-| 2.5 | Prompt iteration: improving results through refinement | Prompt & Context Engineering | Guide | Existing: Prompt Anatomy |
-| 2.3 | Context engineering: giving AI the right information | Prompt & Context Engineering | Guide | Existing: Prompt Anatomy, Context Windows |
-| 2.4 | Writing clear constraints and instructions | Prompt & Context Engineering | Brief | 2.5 |
-| 3.2 | Evaluating AI outputs: when to trust and when to verify | Responsible Use | Guide | Existing: Hallucinations |
-| 1.10 | Practical limitations of AI | Fundamentals | Brief | Existing: Hallucinations |
-
----
+| ID | Chapter | Category| Dependencies |
+|---|---|---|---|
+| 2.1 | Prompt anatomy: the building blocks of an effective prompt | Prompt & Context Eng. | None |
+| 2.2 | Prompt vs. conversation: choosing the right interaction style | Prompt & Context Eng. | 2.1 |
+| 2.5 | Prompt iteration: improving results through refinement | Prompt & Context Eng. | 2.1 |
+| 2.3 | Context engineering: giving AI the right information | Prompt & Context Eng. | 2.1, 1.8 |
+| 1.8 | Context windows and memory limitations *(Existing)* | Fundamentals | None |
+| 2.4 | Writing clear constraints and instructions | Prompt & Context Eng. | 2.5 |
+| 1.9 | Hallucinations: what they are and why they happen | — | None |
+| 3.2 | Evaluating AI outputs: when to trust and when to verify | Responsible Use | 1.9 |
+| 1.10 | Practical limitations of AI | Fundamentals | 1.9 |
+| 1.6 | Why AI is probabilistic *(Existing)* | Fundamentals | None |
+| 1.7 | Tokens explained *(Existing)* | Fundamentals | None |
 
 ## Wave 2 — Visible wins for QA · P2
 
 | ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
+|---|---|---|---|---|
 | 6.2 | AI for test design and test case generation | AI for QA & Daily Work | Guide / Lab | 2.3, 2.5 |
 | 6.3 | AI as a peer reviewer for your work | AI for QA & Daily Work | Guide / Lab | 2.5 |
 | 6.1 | AI for requirements analysis and review | AI for QA & Daily Work | Guide | 2.3 |
@@ -116,26 +119,26 @@ Priority tiers correspond to implementation order:
 | 3.3 | Fact-checking AI responses with external sources | Responsible Use | Guide | 3.2 |
 | 3.7 | Common AI failure modes and how to detect them | Responsible Use | Guide | 3.2, 1.10 |
 
----
-
 ## Wave 3 — Prompting depth + tools · P3
 
 | ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
-| 2.6 | Advanced prompting: role, few-shot, structured instructions | Prompt & Context Engineering | Guide | 2.4, 2.5 |
-| 2.8 | Building and maintaining a personal prompt library | Prompt & Context Engineering | Brief | 2.5 |
+|---|---|---|---|---|
+| 2.6 | Advanced prompting: role, few-shot, structured instructions | Prompt & Context Eng. | Guide | 2.4, 2.5 |
+| 2.8 | Building and maintaining a personal prompt library | Prompt & Context Eng. | Brief | 2.5 |
+| 2.7 | Token-efficient prompting strategies *(Existing)* | Prompt & Context Eng. | — | 2.6 |
 | 4.1 | Understanding AI tool categories and capabilities | Tools & Ecosystem | Brief | None |
 | 4.2 | How to choose the right AI tool for a task | Tools & Ecosystem | Brief | 4.1 |
 | 4.3 | AI tool overview: ChatGPT, Claude, Gemini, GitHub Copilot | Tools & Ecosystem | Brief | 4.2 |
 | 4.4 | Model versions and why they matter | Tools & Ecosystem | Brief | None |
 | 4.5 | Understanding tool limitations and documentation | Tools & Ecosystem | Brief | 1.10 |
-
----
+| 4.6 | Harness tools: what a harness is and why it matters *(Existing)* | Tools & Ecosystem | — | 4.1 |
+| 4.7 | GitHub Copilot premium requests *(Existing — needs periodic refresh)* | Tools & Ecosystem | — | 4.3 |
+| 4.8 | GitHub Copilot tools and file structure *(Existing)* | Tools & Ecosystem | — | 4.3 |
 
 ## Wave 4 — Workflow + remaining responsible use · P4
 
 | ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
+|---|---|---|---|---|
 | 6.5 | Building a personal AI workflow | AI for QA & Daily Work | Guide | 4.2, 6.3 |
 | 6.6 | Integrating AI into daily work habits | AI for QA & Daily Work | Guide | 6.5 |
 | 6.7 | Measuring personal productivity gains from AI | AI for QA & Daily Work | Guide | 6.5 |
@@ -144,54 +147,21 @@ Priority tiers correspond to implementation order:
 | 3.5 | AI ethics in everyday work | Responsible Use | Brief | None |
 | 3.6 | Bias in AI: understanding and recognizing it | Responsible Use | Brief | None |
 
----
-
 ## Wave 5 — Agents, collaboration, mindset, nice-to-know fundamentals · P5
 
 | ID | Chapter | Category | Type | Dependencies |
-|----|---------|----------|------|--------------|
-| 5.1 | What an AI agent is and how it works | Agents & Automation | Brief | Existing: Agent/Skill/MCP |
-| 5.4 | Model Context Protocol (MCP) in practice | Agents & Automation | Guide / Lab | 5.1, Existing MCP |
-| 5.5 | Human-in-the-loop automation | Agents & Automation | Brief | Existing: Plan → Review → Act |
-| 7.1 | Giving feedback to improve responses within a conversation | Collaboration | Brief | 2.5 |
-| 7.2 | Documenting and sharing effective prompts | Collaboration | Guide | 2.8 |
-| 7.3 | Explaining AI-assisted work transparently to colleagues | Collaboration | Brief | None |
-| 7.4 | Building team knowledge around AI usage | Collaboration | Guide | 7.2 |
+|---|---|---|---|---|
+| 5.2 | Agent, skill and MCP fundamentals *(Existing)* | Agents & Automation | — | None |
+| 5.1 | What an AI agent is and how it works | Agents & Automation | Brief | 5.2 |
+| 5.4 | Model Context Protocol (MCP) in practice | Agents & Automation | Guide / Lab | 5.1, 5.2 |
+| 5.3 | Plan → Review → Act workflow *(Existing)* | Agents & Automation | — | None |
+| 5.5 | Human-in-the-loop automation | Agents & Automation | Brief | 5.3 |
+| 7.1 | Giving feedback to improve responses within a conversation *(unwritten)* | Collaboration | Brief | 2.5 |
+| 7.2 | Documenting and sharing effective prompts *(unwritten)* | Collaboration | Guide | 2.8 |
+| 7.3 | Explaining AI-assisted work transparently to colleagues *(unwritten)* | Collaboration | Brief | None |
+| 7.4 | Building team knowledge around AI usage *(unwritten)* | Collaboration | Guide | 7.2 |
 | 1.4 | Types of AI models: generative vs. predictive; text/image/code/audio | Fundamentals | Brief | 1.1 |
 | 1.5 | How AI models learn: training, fine-tuning, adaptation | Fundamentals | Brief | 1.1 |
-| 8.1 | Overcoming resistance to AI adoption | Mindset | Brief | None |
-| 8.2 | Setting realistic expectations for AI | Mindset | Brief | None |
-| 8.4 | Developing an AI-augmented mindset | Mindset | Brief | 8.1, 8.2 |
-
----
-
-# Existing Chapters (Already Available on the Portal)
-
-These chapters are already available and should be re-verified as noted in the roadmap.
-
-| ID | Chapter | Category |
-|----|---------|----------|
-| 1.2 | AI vs. LLMs | Fundamentals |
-| 1.3 | What is a Large Language Model (LLM) | Fundamentals |
-| 1.6 | Why AI is probabilistic | Fundamentals |
-| 1.7 | Tokens explained | Fundamentals |
-| 1.8 | Context windows and memory limitations | Fundamentals |
-| 1.9 | Hallucinations: what they are and why they happen | Fundamentals |
-| 2.1 | Prompt anatomy: the building blocks of an effective prompt | Prompt & Context Engineering |
-| 2.7 | Token-efficient prompting strategies | Prompt & Context Engineering |
-| 4.6 | Harness tools: what a harness is and why it matters | Tools & Ecosystem |
-| 4.7 | GitHub Copilot premium requests | Tools & Ecosystem |
-| 4.8 | GitHub Copilot tools and file structure | Tools & Ecosystem |
-| 5.2 | Agent, skill and MCP fundamentals | Agents & Automation |
-| 5.3 | Plan → Review → Act workflow | Agents & Automation |
-
-## Current Status
-
-| Wave | Status |
-|------|--------|
-| Wave 0 (blocking) | Complet - 3 capitole |
-| Wave 1 (core skill/calibrare) | Complet - 6 capitole |
-| Wave 2 (QA wins) | Neinceput |
-| Wave 3 | Neinceput|
-| Wave 4 | Neinceput |
-| Wave 5 | Neinceput |
+| 8.1 | Overcoming resistance to AI adoption *(unwritten)* | Mindset | Brief | None |
+| 8.2 | Setting realistic expectations for AI *(unwritten)* | Mindset | Brief | None |
+| 8.4 | Developing an AI-augmented mindset *(unwritten)* | Mindset | Brief | 8.1, 8.2 |

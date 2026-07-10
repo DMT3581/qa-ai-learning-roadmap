@@ -19,17 +19,17 @@ export default defineConfig({
     sidebar: [
       {
         text: '1. AI Fundamentals',
-        collapsed: true,
+        collapsed: false,
         items: [
-          { text: '1.1 What AI Is and How It Differs from Traditional Software', link: '/01-ai-fundamentals/1.1-what-ai-is-and-how-it-differs-from-traditional-software' },
+          { text: '1.1 What AI Is', link: '/01-ai-fundamentals/1.1-what-ai-is-and-how-it-differs-from-traditional-software' },
           { text: '1.2 AI vs LLMs', link: '/01-ai-fundamentals/1.2-ai-vs-llms' },
-          { text: '1.3 What Is a Large Language Model (LLM)?', link: '/01-ai-fundamentals/1.3-what-is-a-llm' },
-          { text: '1.4 Types of AI models: generative vs. predictive; text/image/code/audio', link: '/01-ai-fundamentals/1.4-types-of-ai-models' },
-          { text: '1.5 How AI models learn: training, fine-tuning, adaptation', link: '/01-ai-fundamentals/1.5-how-ai-models-learn' },
+          { text: '1.3 What Is a LLM?', link: '/01-ai-fundamentals/1.3-what-is-a-llm' },
+          { text: '1.4 Types of AI models', link: '/01-ai-fundamentals/1.4-types-of-ai-models' },
+          { text: '1.5 How AI models learn', link: '/01-ai-fundamentals/1.5-how-ai-models-learn' },
           { text: '1.6 Why AI is probabilistic', link: '/01-ai-fundamentals/1.6-why-ai-is-probabilistic' },
           { text: '1.7 Tokens explained', link: '/01-ai-fundamentals/1.7-tokens-explained' },
           { text: '1.8 Context windows and memory limitations', link: '/01-ai-fundamentals/1.8-context-windows' },
-          { text: '1.9 Hallucinations: what they are and why they happen', link: '/01-ai-fundamentals/1.9-hallucinations' },
+          { text: '1.9 Hallucinations', link: '/01-ai-fundamentals/1.9-hallucinations' },
           { text: '1.10 Practical Limitations of AI', link: '/01-ai-fundamentals/1.10-practical-limitations-of-ai' }
         ]
       },
@@ -37,24 +37,27 @@ export default defineConfig({
         text: '2. Prompt and Context Engineering',
         collapsed: true,
         items: [
-          { text: '2.1 Prompt anatomy: the building blocks of an effective prompt', link: '/02-prompting-core-skills/2.1-prompt-anatomy' },
-          { text: '2.2 Prompt vs. Conversation: Choosing the Right Interaction Style', link: '/02-prompting-core-skills/2.2-prompt-vs-conversation' },
-          { text: '2.3 Context Engineering: Giving AI the Right Information', link: '/02-prompting-core-skills/2.3-context-engineering' },
-          { text: '2.4 Writing Clear Constraints and Instructions', link: '/02-prompting-core-skills/2.4-writing-clear-constraints-and-instructions' },
-          { text: '2.5 Prompt Iteration: Improving Results Through Refinement', link: '/02-prompting-core-skills/2.5-prompt-iteration' },
-          { text: '2.6 Advanced Prompting Techniques: Role, Few-Shot Examples and Structured Instructions', link: '/02-prompting-core-skills/2.6-advanced-prompting-techniques' },
-          { text: '2.7 Token-Efficient Prompting Strategies', link: '/02-prompting-core-skills/2.7-token-efficient-prompting' },
+          { text: '2.1 Prompt anatomy', link: '/02-prompting-core-skills/2.1-prompt-anatomy' },
+          { text: '2.2 Prompt vs. Conversation', link: '/02-prompting-core-skills/2.2-prompt-vs-conversation' },
+          { text: '2.3 Context Engineering', link: '/02-prompting-core-skills/2.3-context-engineering' },
+          { text: '2.4 Writing Clear Constraints', link: '/02-prompting-core-skills/2.4-writing-clear-constraints-and-instructions' },
+          { text: '2.5 Prompt Iteration', link: '/02-prompting-core-skills/2.5-prompt-iteration' },
+          { text: '2.6 Advanced Prompting', link: '/02-prompting-core-skills/2.6-advanced-prompting-techniques' },
+          { text: '2.7 Token-Efficient Prompting', link: '/02-prompting-core-skills/2.7-token-efficient-prompting' },
           { text: '2.8 Building and Maintaining a Personal Prompt Library', link: '/02-prompting-core-skills/2.8-building-and-maintaining-a-personal-prompt-library' },
         ]
       },
       {
         text: '3. Responsible AI Usage',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '3.1 Confidentiality and Sensitive Data', link: '/03-policy-safety/3.1-confidentiality-and-sensitive-data' },
-          { text: '3.2 Evaluating AI Outputs: When to Trust and When to Verify', link: '/03-policy-safety/3.2-evaluating-ai-outputs' },
+          { text: '3.2 Evaluating AI Outputs', link: '/03-policy-safety/3.2-evaluating-ai-outputs' },
           { text: '3.3 Fact-Checking AI Responses with External Sources', link: '/03-policy-safety/3.3-fact-checking-ai-responses' },
-          // { text: '3.7 (TBD titlu)', link: '/03-policy-safety/3.7-tbd' }
+          { text: '3.4 Intellectual Property', link: '/03-policy-safety/3.4-intellectual-property' },
+          { text: '3.5 AI Ethics', link: '/03-policy-safety/3.5-ai-ethics' },
+          { text: '3.6 Bias in AI', link: '/03-policy-safety/3.6-bias-in-ai' },
+          { text: '3.7 Common AI Failure Modes', link: '/03-policy-safety/3.7-common-ai-failure-modes' }
         ]
       },
       {
