@@ -68,7 +68,10 @@ export default defineConfig({
           { text: '4.2 How to Choose the Right AI Tool for a Task', link: '/04-ai-tools/4.2-how-to-choose-the-right-ai-tool' },
           { text: '4.3 AI Tool Overview', link: '/04-ai-tools/4.3-ai-tool-overview' },
           { text: '4.4 Model Versions', link: '/04-ai-tools/4.4-model-versions' },
-          { text: '4.5 Tool Limitations and Documentation', link: '/04-ai-tools/4.5-tool-limitations-and-documentation' }
+          { text: '4.5 Tool Limitations and Documentation', link: '/04-ai-tools/4.5-tool-limitations-and-documentation' },
+          { text: '4.6 Harness Tools', link: '/04-ai-tools/4.6-harness-tools' },
+          { text: '4.7 Github Copilot Premium Requests', link: '/04-ai-tools/4.7-github-copilot-premium-requests' },
+          { text: '4.8 GitHub Copilot Tools and File Structure', link: '/04-ai-tools/4.8-github-copilot-tools-and-file-structure' }
         ]
       },
       {
