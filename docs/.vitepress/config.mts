@@ -62,7 +62,7 @@ export default defineConfig({
       },
       {
         text: '4. AI Tools and Ecosystem',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '4.1 Understanding AI Tool Categories and Capabilities', link: '/04-ai-tools/4.1-understanding-ai-tool-categories-and-capabilities' },
           { text: '4.2 How to Choose the Right AI Tool for a Task', link: '/04-ai-tools/4.2-how-to-choose-the-right-ai-tool' },
@@ -75,35 +75,48 @@ export default defineConfig({
         ]
       },
       {
-        text: '5. Agents and Automation (TBD)',
+        text: '5. Agents and Automation',
         collapsed: true,
         items: [
-          // { text: 'Wave 4 - de completat', link: '/05-responsible-use-habits/index' }
+          { text: '5.1 What Is an AI Agent', link: '/05-agents-automation/5.1-what-is-an-ai-agent' },
+          { text: '5.2 Agent, Skill and MCP', link: '/05-agents-automation/5.2-agent-skill-mcp' },
+          { text: '5.3 Plan → Review → Act', link: '/05-agents-automation/5.3-plan-review-act' },
+          { text: '5.4 MCP in Practice', link: '/05-agents-automation/5.4-mcp-in-practice' },
+          { text: '5.5 Human-in-the-Loop Automation', link: '/05-agents-automation/5.5-human-in-the-loop' }
         ]
       },
       {
-        text: '6. AI for QA and Daily Work (TBD)',
-        collapsed: false,
-        items: [
-          // { text: '6.1 (TBD titlu)', link: '/06-qa-wins/6.1-tbd' },
-          // { text: '6.2 (TBD titlu)', link: '/06-qa-wins/6.2-tbd' },
-          // { text: '6.3 (TBD titlu)', link: '/06-qa-wins/6.3-tbd' },
-          // { text: '6.4 (TBD titlu)', link: '/06-qa-wins/6.4-tbd' },
-          // { text: '6.5 Building a Personal AI Workflow', link: '/06-qa-wins/6.5-building-a-personal-ai-workflow' }
-        ]
-      },
-      {
-        text: '7. Collaboration and Team Adoption (TBD)',
+        text: '6. AI for QA and Daily Work',
         collapsed: true,
         items: [
-          // { text: 'Wave 5 - de completat', link: '/07-agents-collaboration/index' }
+          { text: '6.1 AI for Requirements Analysis and Review', link: '/06-qa-wins/6.1-ai-for-req-analysis-and-review' },
+          { text: '6.2 AI for Test Design and Test Case Generation', link: '/06-qa-wins/6.2-ai-for-td-and-tc-generation' },
+          { text: '6.3 AI as a Peer Reviewer', link: '/06-qa-wins/6.3-ai-as-peer-reviewer' },
+          { text: '6.4 AI for Documentation and Knowledge Capture', link: '/06-qa-wins/6.4-ai-for-documentation' },
+          { text: '6.5 Building a Personal AI Workflow', link: '/06-qa-wins/6.5-building-a-personal-ai-workflow' },
+          { text: '6.6 Integrating AI into Daily Work Habits', link: '/06-qa-wins/6.6-integrating-ai-into-daily-work' },
+          { text: '6.7 Measuring Personal Productivity Gains from AI', link: '/06-qa-wins/6.7-measuring-prod-gains-from-ai' },
+          { text: '6.8 Cost vs Value: When AI Is Worth Using', link: '/06-qa-wins/6.8-cost-vs-value' },
         ]
       },
       {
-        text: '8. Mindset and Adoption (TBD)',
-        collapsed: false,
+        text: '7. Collaboration and Team Adoption',
+        collapsed: true,
         items: [
-          // { text: '8.3 AI Does Not Replace Human Judgment', link: '/08-mindset-judgment/8.3-ai-does-not-replace-human-judgment' }
+          { text: '7.1 Giving Feedback to Improve Responses Within a Conversation', link: '/07-agents-collaboration/7.1-giving-feedback-to-improve-responses' },
+          { text: '7.2 Documenting and Sharing Effective Prompts', link: '/07-agents-collaboration/7.2-documenting-effective-prompts' },
+          { text: '7.3 Explaining AI-assisted work to colleagues', link: '/07-agents-collaboration/7.3-explaining-ai-assisted-work' },
+          { text: '7.4 Building Team Knowledge Around AI Usage', link: '/07-agents-collaboration/7.4-building-team-knowledge' }
+        ]
+      },
+      {
+        text: '8. Mindset and Adoption ',
+        collapsed: true,
+        items: [
+          { text: '8.1 Overcoming Resistance to AI Adoption', link: '/08-mindset-judgment/8.1-overcoming-resistance-to-ai-adoption' },
+          { text: '8.2 Setting Realistic Expectations for AI', link: '/08-mindset-judgment/8.2-setting-realistic-expectations-for-ai' },
+          { text: '8.3 AI Does Not Replace Human Judgment', link: '/08-mindset-judgment/8.3-ai-does-not-replace-human' },
+          { text: '8.4 Developing an AI-Augmented Mindset', link: '/08-mindset-judgment/8.4-developing-ai-mindset' }
         ]
       }
     ],
